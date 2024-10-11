@@ -22,7 +22,6 @@ header {
 
 /* Estilização da seção */
 section {
-    display: flex; /* Habilita o layout flexível */
     align-items: center; /* Alinha verticalmente no centro */
     padding: 20px; /* Espaçamento interno */
     margin: 20px; /* Margem externa */
