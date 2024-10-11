@@ -14,7 +14,7 @@ body {
 
 /* Estilização do cabeçalho */
 header {
-    background-color: #007bff; /* Cor de fundo do cabeçalho */
+    background-color: #a600ff; /* Cor de fundo do cabeçalho */
     color: #fff; /* Cor do texto do cabeçalho */
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
@@ -22,6 +22,8 @@ header {
 
 /* Estilização da seção */
 section {
+    display: flex; /* Habilita o layout flexível */
+    align-items: center; /* Alinha verticalmente no centro */
     padding: 20px; /* Espaçamento interno */
     margin: 20px; /* Margem externa */
     background-color: #fff; /* Cor de fundo da seção */
@@ -46,6 +48,7 @@ a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
+
 /* Estilização do rodapé */
 footer {
     text-align: center; /* Centraliza o texto do rodapé */
@@ -57,9 +60,6 @@ footer {
     width: 100%; /* Largura total */
 }
 
-/* Estilização da imagem */
-footer img {
-    max-width: 100%; /* Limita a largura da imagem ao tamanho do rodapé */
-    height: auto; /* Mantém a proporção da imagem */
-}
+
+
 
