@@ -8,10 +8,8 @@ body {
     font-family:"Fira Code" ; /* Fonte padrão */
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove preenchimento padrão */
-    background-color: #f4f4f4; /* Cor de fundo */
-    color: #333; /* Cor do texto */
+    background-color: #033d48;
 }
-
 /* Estilização do cabeçalho */
 header {
     background-color: #a600ff; /* Cor de fundo do cabeçalho */
@@ -21,14 +19,17 @@ header {
 }
 
 /* Estilização da seção */
+
 section {
-    align-items: center; /* Alinha verticalmente no centro */
+    display: flex; /* Adiciona o display flex */
     padding: 20px; /* Espaçamento interno */
-    margin: 20px; /* Margem externa */
-    background-color: #fff; /* Cor de fundo da seção */
+    margin: -20px; /* Margem externa */
+    background-color: #033d48; /* Cor de fundo da seção */
     border-radius: 5px; /* Bordas arredondadas */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 60px;
 }
+
 
 /* Estilização dos títulos da seção */
 h2 {
@@ -45,6 +46,10 @@ a {
 a:hover {
     color: #0056b3; /* Cor do link ao passar o mouse */
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+img{
+    height: 50px;
+    
 }
 
 
