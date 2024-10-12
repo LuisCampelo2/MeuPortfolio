@@ -1,53 +1,55 @@
-
+@font-face {
+    font-family: 'mine';
+    src: url('../fonts/minecraft_font.ttf') format('truetype'); /* Altere o formato se necessário */
+}
+    
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Adicionando fonte fallback */
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-image: url('../img/imagemDeFundo.jpg'); /* Caminho correto */
+    color: #000000;
 }
 
 header {
-    background: #007bff;
+    background: #002144;
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
 section {
     background: #fff;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 800px;
+}
+#apresentação{
+    margin-left: 50px;
+}
+#portfolio{
+    margin-right: 50px;
+}
+#video{
+    margin-left: 50px;
+}
+#contatos{
+    margin-right: 50px;
 }
 
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 15px;
+    margin-left: 100px;
+    width: 500px;
 }
 
 .portfolio-item {
@@ -57,11 +59,16 @@ section {
     border-radius: 10px;
     text-align: center;
 }
-.imagemTeste{
-    width: 10px;
-
+.imagem-formaçao{
+    width:600px;
+    margin-bottom: 0%;
 }
-.linkCurriculo{
+
+.imagemTeste {
+    width: 10px;
+}
+
+.linkCurriculo {
     text-decoration: none;
 }
 
