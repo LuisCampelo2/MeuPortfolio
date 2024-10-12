@@ -1,6 +1,12 @@
 @font-face {
-    font-family: 'mine';
-    src: url('../fonts/minecraft_font.ttf') format('truetype'); /* Altere o formato se necessário */
+    font-family: 'minecraft';
+    src: url(../fonts/Minecraftia-Regular.ttf);
+}
+@keyframes slideIn {
+    to {
+        transform: translateY(0); /* Move para a posição original */
+        opacity: 1;
+    }
 }
     
 * {
@@ -10,14 +16,19 @@
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Adicionando fonte fallback */
+    font-family: 'minecraft'; /* Adicionando fonte fallback */
+    font-size: medium;
     line-height: 1.6;
     background-image: url('../img/imagemDeFundo.jpg'); /* Caminho correto */
     color: #000000;
+    transform: translateY(50px); /* Começa deslocado para baixo */
+    opacity: 0;
+    animation: slideIn 1.5s ease-out forwards;
+    
 }
 
 header {
-    background: #002144;
+    background: #5042a0;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -55,21 +66,21 @@ section {
 .portfolio-item {
     background: #f9f9f9;
     border: 1px solid #ddd;
-    padding: 15px;
+    padding: 50px;
     border-radius: 10px;
     text-align: center;
-}
-.imagem-formaçao{
-    width:600px;
-    margin-bottom: 0%;
-}
-
-.imagemTeste {
-    width: 10px;
-}
-
-.linkCurriculo {
     text-decoration: none;
+}
+.portfolio-item li{
+    margin-left: 0px;
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0; /* Remove o espaçamento padrão da lista */
+}
+.portfolio-item a{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(36, 0, 241);
 }
 
 footer {
