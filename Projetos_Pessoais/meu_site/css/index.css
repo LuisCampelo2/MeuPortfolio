@@ -54,8 +54,12 @@ section {
     background: #f9f9f9;
     border: 1px solid #ddd;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
+}
+.imagemTeste{
+    width: 10px;
+
 }
 
 footer {
