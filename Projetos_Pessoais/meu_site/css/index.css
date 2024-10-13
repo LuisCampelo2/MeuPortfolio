@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 @font-face {
     font-family: 'minecraft';
     src: url(../fonts/Minecraftia-Regular.ttf);
@@ -11,7 +9,6 @@
         opacity: 1;
     }
 }
->>>>>>> 39408cffa61a4bb8bb1c633d50ee480110e7e7fe
 
 * {
     margin: 0;
@@ -19,36 +16,6 @@
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background: #007bff;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-=======
 body {
     font-family: Georgia, 'Times New Roman', Times, serif; /* Adicionando fonte fallback */
     font-size: x-large;
@@ -68,22 +35,15 @@ header {
     text-align: center;
     font-family: 'minecraft';
     background-color: green;
->>>>>>> 39408cffa61a4bb8bb1c633d50ee480110e7e7fe
 }
 
 section {
     background: #fff;
-<<<<<<< HEAD
-    margin: 20px auto;
-=======
     margin: 10px auto;
->>>>>>> 39408cffa61a4bb8bb1c633d50ee480110e7e7fe
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-<<<<<<< HEAD
-=======
     position: relative; /* Para referência de posicionamento */
 }
 
@@ -117,37 +77,19 @@ section:last-of-type::after {
 
 #contatos{
     margin-right: 50px;
->>>>>>> 39408cffa61a4bb8bb1c633d50ee480110e7e7fe
 }
 
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 15px;
-<<<<<<< HEAD
-=======
     margin-left: 100px;
     width: 500px;
->>>>>>> 39408cffa61a4bb8bb1c633d50ee480110e7e7fe
 }
 
 .portfolio-item {
     background: #f9f9f9;
     border: 1px solid #ddd;
-<<<<<<< HEAD
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-}
-.imagemTeste{
-    width: 10px;
-
-}
-.linkCurriculo{
-    text-decoration: none;
-}
-
-=======
     padding: 50px;
     border-radius: 10px;
     text-align: center;
@@ -167,7 +109,6 @@ section:last-of-type::after {
     color: rgb(36, 0, 241);
 }
 
->>>>>>> 39408cffa61a4bb8bb1c633d50ee480110e7e7fe
 footer {
     text-align: center;
     padding: 10px 0;
@@ -176,8 +117,5 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 39408cffa61a4bb8bb1c633d50ee480110e7e7fe
+
