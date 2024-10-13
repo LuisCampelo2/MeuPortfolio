@@ -1,3 +1,32 @@
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Tamanho da fonte menor para tablets */
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta o grid para telas menores */
+    }
+
+    section {
+        padding: 10px; /* Reduz o padding nas seções */
+    }
+}
+
+/* Para celulares */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Tamanho da fonte ainda menor para celulares */
+    }
+
+    header {
+        padding: 10px; /* Ajusta o padding do cabeçalho */
+    }
+
+    .portfolio-item {
+        padding: 20px; /* Reduz o padding dos itens do portfólio */
+    }
+}
+
 @font-face {
     font-family: 'minecraft';
     src: url(../fonts/Minecraftia-Regular.ttf);
@@ -18,9 +47,9 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif; /* Adicionando fonte fallback */
-    font-size: x-large;
+    font-size: 16px;
     line-height: 1.6;
-    background-image: url('../img/imagemDeFundo.jpg'); /* Caminho correto */
+    background-image: url('../img/image.png'); /* Caminho correto */
     color: #000000;
     transform: translateY(50px); /* Começa deslocado para baixo */
     opacity: 0;
@@ -28,10 +57,11 @@ body {
 }
 
 header {
-    background: #5042a0;
+    background: rgb(red, green, blue);
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    font-family:'minecraft' ;
 }
 
 section {
