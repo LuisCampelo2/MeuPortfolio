@@ -1,141 +1,58 @@
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Tamanho da fonte menor para tablets */
-    }
-
-    .portfolio-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta o grid para telas menores */
-    }
-
-    section {
-        padding: 10px; /* Reduz o padding nas seções */
-    }
-}
-
-/* Para celulares */
-@media (max-width: 480px) {
-    body {
-        font-size: 12px; /* Tamanho da fonte ainda menor para celulares */
-    }
-
-    header {
-        padding: 10px; /* Ajusta o padding do cabeçalho */
-    }
-
-    .portfolio-item {
-        padding: 20px; /* Reduz o padding dos itens do portfólio */
-    }
-}
-
+/* Estilização geral do corpo da página */
 @font-face {
-    font-family: 'minecraft';
-    src: url(../fonts/Minecraftia-Regular.ttf);
-}
-
-@keyframes slideIn {
-    to {
-        transform: translateY(0); /* Move para a posição original */
-        opacity: 1;
-    }
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Fira Code'; /* Nome que você vai usar para referenciar a fonte */
+    src: url('fonts/FiraCode-Regular.ttf') format('truetype');
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif; /* Adicionando fonte fallback */
-    font-size: 16px;
-    line-height: 1.6;
-    background-image: url('../img/image.png'); /* Caminho correto */
-    color: #000000;
-    transform: translateY(50px); /* Começa deslocado para baixo */
-    opacity: 0;
-    animation: slideIn 1.5s ease-out forwards;
+    
+    font-family:"Fira Code" ; /* Fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    background-color: #033d48;
 }
-
+/* Estilização do cabeçalho */
 header {
-    background: rgb(red, green, blue);
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    font-family:'minecraft' ;
+    background-color: #a600ff; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
 }
 
 section {
-    background: #fff;
-    margin: 10px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    position: relative; /* Para referência de posicionamento */
+    display: flex; /* Adiciona o display flex */
+    padding: 20px; /* Espaçamento interno */
+    margin: -20px; /* Margem externa */
+    background-color: #033d48; /* Cor de fundo da seção */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 60px;
 }
 
-section::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 100px; /* Altura da linha */
-    background-color: #5042a0; /* Cor da linha */
-    top: 100%; /* Posiciona a linha abaixo da seção */
-    left: 50%; /* Centraliza a linha */
-    transform: translateX(-50%);
-    z-index: -1; /* Para que a linha fique atrás do conteúdo */
+
+/* Estilização dos títulos da seção */
+h2 {
+    color: #007bff; /* Cor dos títulos */
 }
 
-section:last-of-type::after {
-    display: none; /* Esconde a linha na última seção */
+/* Estilização dos links */
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #007bff; /* Cor dos links */
 }
 
-#apresentação{
-    margin-left: 50px;
+/* Mudança de cor dos links ao passar o mouse */
+a:hover {
+    color: #0056b3; /* Cor do link ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+img{
+    height: 50px;
+    
 }
 
-#portfolio{
-    margin-right: 50px;
-}
 
-#video{
-    margin-left: 50px;
-}
-
-#contatos{
-    margin-right: 50px;
-}
-
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
-    margin-left: 100px;
-    width: 500px;
-}
-
-.portfolio-item {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 50px;
-    border-radius: 10px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.portfolio-item li {
-    margin-left: 0px;
-    text-align: center;
-    list-style-type: none;
-    padding-left: 0; /* Remove o espaçamento padrão da lista */
-}
-
-.portfolio-item a {
-    text-decoration: none;
-    text-align: center;
-    color: rgb(36, 0, 241);
-}
-
+/* Estilização do rodapé */
 footer {
     text-align: center;
     padding: 10px 0;
