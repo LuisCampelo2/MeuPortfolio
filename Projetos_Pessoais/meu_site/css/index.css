@@ -112,7 +112,7 @@ section:last-of-type::after {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #007bff;
+    background:green;
     color: #fff;
     position: relative;
     bottom: 0;
